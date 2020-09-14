@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Gharbetiba</string>
+    <string name="btnFinder">Finder</string>
+    <string name="btnOwner">Owner</string>
+    <string name="filter">Filter</string>
+    <string name="share">Share</string>
+    <string name="find_activity">Find Rooms</string>
+    <string name="main_activity">Gharbeti Baa</string>
+    <string name="map_key" translatable="false">AIzaSyB_qsP8AOP_P0MdlPz-48TDaJYjTP3vbjo</string>
+    <string name="room_detail_activity">Description</string>
+    <string name="owner_activity">Add Room Info</string>
+    <string name="ownername">Owner Name</string>
+    <string name="ownernumber">Contact Number</string>
+    <string name="ownerlocation">Location (Streetname,City)</string>
+    <string name="roomType">Room Type (Room | Flat ..)</string>
+    <string name="roomnumber">Total Rooms</string>
+
+    <string name="upload">Browse</string>
+
+    <string name="btnSave">Save</string>
+    <string name="btnSubmit">Submit</string>
+    <string name="btnReset">Reset</string>
+
+    <string name="admin">Admin</string>
+
+    <string name="show_activity">Find Rooms</string>
+
+    <string name="search">Preferred Location...</string>
+
+    <string name="callOwner">Call the Owner</string>
+
+    <string name="kitchen">Kitchen</string>
+    <string name="office">Office</string>
+    <string name="cycle">Cycle</string>
+    <string name="preference">Preference</string>
+    <string name="notAvailable">Not Available</string>
+    <string name="available">Available</string>
+    <string name="car">Car</string>
+    <string name="bike">Bike</string>
+    <string name="type">Type</string>
+    <string name="noParking">No Parking</string>
+    <string name="parking">Parking</string>
+
+    <string name="house">House</string>
+    <string name="flat">Flat</string>
+    <string name="apartment">Apartment</string>
+    <string name="any">Any</string>
+    <string name="individual">Individual</string>
+
+    <string name="internet">Internet</string>
+
+    <string name="family">Family</string>
+    <string name="hostel">Hostel</string>
+    <string name="chooseImage">Please Choose the Image</string>
+    <string name="room">Room</string>
+    <string name="submitSuccess">Submitted Successfully!</string>
+    <string name="noRooms">Sorry! No Rooms Available Right Now!</string>
+    <string name="submitNotification">Submission Notification!</string>
+    <string name="uploading">Uploading Your Information...</string>
+    <string name="imageUploded">Image has been uploaded !</string>
+    <string name="imageNotSelected">Image is not Selected!</string>
+    <string name="selectRoomImage">Please Select the room image!</string>
+    <string name="nameEmpty">Name cannot be empty!</string>
+    <string name="numberEmpty">Number cannot be empty!</string>
+    <string name="locationEmpty">Location cannot be empty!</string>
+    <string name="roomNumberEmpty">Total rooms number cannot be empty!</string>
+    <string name="optionsEmpty">Please fill the options completely!</string>
+    <string name="dataSuccess">Data added successfully!</string>
+    <string name="failedData">Failed to upload data...Please Try Again!</string>
+    <string name="noDescription">Sorry! This room has no description yet!</string>
+    <string name="preferred">Preferred</string>
+    <string name="rooms">Rooms</string>
+    <string name="postedBy">Owner</string>
+    <string name="shareMessage">Hello! I have found a perfect room for you! Contact in this number:</string>
+    <string name="roomInfo">Room Information!</string>
+    <string name="shareVia">Share via...</string>
+    <string name="postedOn">Posted On:</string>
+
+</resources>

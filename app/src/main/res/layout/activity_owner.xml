@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OwnerActivity">
+
+
+    <include
+        android:id="@+id/main_toolbar"
+        layout="@layout/toolbar_main" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textlayout_ownername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_toolbar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textinput_ownername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ownername"
+            android:inputType="textPersonName"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textlayout_ownernumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textlayout_ownername">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textinput_ownernumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ownernumber"
+            android:inputType="phone"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textlayout_ownerlocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textlayout_ownernumber">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textinput_ownerlocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ownerlocation"
+            android:inputType="textPersonName"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textlayout_roomnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textlayout_ownerlocation">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textinput_roomnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/roomnumber"
+            android:inputType="number"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/textlayout_roomnumber"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/radioheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:gravity="center"
+        android:text="@string/type" />
+
+    <!--RadoiGroup for type-->
+    <RadioGroup
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioheader"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:text="@string/room"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/flat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:text="@string/flat"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/hostel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:text="@string/hostel"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/apartment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:text="@string/apartment"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:text="@string/house"
+            android:textSize="10sp" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/type"
+        android:background="@color/colorAccent" />
+
+
+    <TextView
+        android:id="@+id/preference_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:gravity="center"
+        android:text="@string/preference" />
+
+    <!--RadioGroup for preference-->
+
+    <RadioGroup
+        android:id="@+id/preference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/preference_header"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/any"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@string/any"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/family"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@string/family"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/individual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@string/individual"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/office"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@string/office"
+            android:textSize="10sp" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/preference"
+        android:background="@color/colorAccent" />
+
+    <LinearLayout
+        android:id="@+id/header_multiple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="@string/internet" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="@string/kitchen" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_multiple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_multiple"
+        android:orientation="horizontal">
+
+        <!--  Radiogroup for internet-->
+        <RadioGroup
+            android:id="@+id/internet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/internet_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/available"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/internet_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/notAvailable"
+                android:textSize="10sp" />
+
+
+        </RadioGroup>
+        <!--Radiogroup for kitchen-->
+        <RadioGroup
+            android:id="@+id/kitchen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/kitchen_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/available"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/kitchen_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/notAvailable"
+                android:textSize="10sp" />
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <!--Internet and kitchen finish-->
+
+    <View
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/layout_multiple"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/parking_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line4"
+        android:gravity="center"
+        android:text="@string/parking" />
+
+
+    <!--    Parking radio buttons starts here-->
+
+    <RadioGroup
+        android:id="@+id/parking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parking_header"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@string/noParking"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@string/cycle"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@string/bike"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="@string/car"
+            android:textSize="10sp" />
+
+    </RadioGroup>
+
+    <!--Parking radio button ends here-->
+    <View
+        android:id="@+id/line5"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/parking"
+        android:background="@color/colorAccent" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line5"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnBrowseImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line6"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.1"
+            android:onClick="onClickBtnBrowse"
+            android:src="@drawable/upload"
+            android:text="@string/upload" />
+
+        <TextView
+            android:id="@+id/textImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="0.9"
+            android:padding="10dp"
+            android:text="@string/chooseImage" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/line6"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/layout_upload"
+        android:background="@color/colorAccent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line6"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/bg_round"
+            android:text="@string/btnReset" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/bg_round"
+            android:text="@string/btnSubmit" />
+    </LinearLayout>
+</RelativeLayout>

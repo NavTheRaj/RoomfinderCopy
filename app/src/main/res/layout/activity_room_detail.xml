@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RoomDetailActivity">
+
+    <include
+        android:id="@+id/main_toolbar"
+        layout="@layout/toolbar_main" />
+
+    <ImageView
+        android:id="@+id/room_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_weight="0.6"
+        android:scaleType="fitXY" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.1">
+
+
+        <ImageView
+            android:id="@+id/internet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:padding="10dp"
+            android:src="@drawable/wifi"
+            app:layout_constraintBottom_toTopOf="@id/textInternet"
+            app:layout_constraintEnd_toStartOf="@id/type"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textInternet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@id/internet"
+            app:layout_constraintStart_toStartOf="@id/internet"
+            app:layout_constraintTop_toBottomOf="@id/internet" />
+
+        <ImageView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:padding="10dp"
+            android:src="@drawable/house"
+            app:layout_constraintBottom_toTopOf="@id/textType"
+            app:layout_constraintStart_toEndOf="@id/internet" />
+
+        <TextView
+            android:id="@+id/textType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@id/type"
+            app:layout_constraintStart_toStartOf="@id/type"
+            app:layout_constraintTop_toBottomOf="@id/type" />
+
+        <ImageView
+            android:id="@+id/parking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:padding="10dp"
+            android:src="@drawable/park"
+            app:layout_constraintBottom_toTopOf="@id/textParking"
+            app:layout_constraintStart_toEndOf="@id/type" />
+
+        <TextView
+            android:id="@+id/textParking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@id/parking"
+            app:layout_constraintStart_toEndOf="@id/type"
+            app:layout_constraintStart_toStartOf="@id/parking"
+            app:layout_constraintTop_toBottomOf="@id/parking" />
+
+        <ImageView
+            android:id="@+id/kitchen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:padding="10dp"
+            android:src="@drawable/stove"
+            app:layout_constraintBottom_toTopOf="@id/textKitchen"
+            app:layout_constraintStart_toEndOf="@id/parking" />
+
+        <TextView
+            android:id="@+id/textKitchen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@id/kitchen"
+            app:layout_constraintStart_toStartOf="@id/kitchen"
+            app:layout_constraintTop_toBottomOf="@id/kitchen" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorAccent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.30"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/textPreferWithRooms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/textCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.30"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/phone"
+            android:title="@string/callOwner" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

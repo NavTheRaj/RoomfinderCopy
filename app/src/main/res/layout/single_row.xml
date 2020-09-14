@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/sr_imageViewRV"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pin"
+        app:layout_constraintBottom_toBottomOf="@+id/sr_imageViewRV"
+        app:layout_constraintEnd_toStartOf="@id/sr_textRV"
+        app:layout_constraintTop_toTopOf="@+id/sr_imageViewRV" />
+
+    <TextView
+        android:id="@+id/sr_textRV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sr_imageViewRV"
+        android:layout_alignRight="@+id/sr_imageViewRV"
+        android:background="@drawable/bg_textimage"
+        android:gravity="center"
+        android:textColor="@color/colorText"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sr_imageViewRV"
+        app:layout_constraintEnd_toEndOf="@+id/sr_imageViewRV"
+        app:layout_constraintStart_toStartOf="@+id/sr_imageViewRV"
+        app:layout_constraintTop_toTopOf="@+id/sr_imageViewRV" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
